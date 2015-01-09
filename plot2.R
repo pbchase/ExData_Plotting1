@@ -39,5 +39,5 @@ plot(myData2$Date, myData2$gap, ylab="Global Active Power (kilowatts)", xlab="",
 
 # write the plot to a file
 png(filename = "plot2.png", width = 480, height = 480, units = "px")
-plot(myData2$Date, myData2$gap, ylab="Global Active Power (kilowatts)", main="", type='l')
+plot(myData2$Date, myData2$gap, ylab="Global Active Power (kilowatts)", xlab="", main="", type='l')
 dev.off()
