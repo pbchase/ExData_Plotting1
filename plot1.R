@@ -27,4 +27,10 @@ data$Date <- strptime(data$Date, format="%d/%m/%Y")
 # Subset the data to the two dates of interest
 myData <- subset(data, Date >= "2007-02-01" & Date <= "2007-02-02", drop=TRUE)
 
+# write the plot the screen
 hist(as.numeric(myData$Global_active_power), xlab="Global Active Power (kilowatts)", main="Global Active Power", col="red")
+
+# write the plot to a file
+png(filename = "plot1.png", width = 480, height = 480, units = "px")
+hist(as.numeric(myData$Global_active_power), xlab="Global Active Power (kilowatts)", main="Global Active Power", col="red")
+dev.off()
