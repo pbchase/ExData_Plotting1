@@ -27,4 +27,4 @@ data$Date <- strptime(data$Date, format="%d/%m/%Y")
 # Subset the data to the two dates of interest
 myData <- subset(data, Date >= "2007-02-01" & Date <= "2007-02-02", drop=TRUE)
 
-hist(as.numeric(myData$Global_active_power))
+hist(as.numeric(myData$Global_active_power), xlab="Global Active Power (kilowatts)", main="Global Active Power", col="red")
