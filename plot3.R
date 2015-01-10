@@ -44,8 +44,16 @@ points(myData2$Date, myData2$Sub_metering_3, type='l', col="blue")
 
 legendText <- c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
 lineCol <- c("black", "red", "blue")
-legend(x="topright", legend=legendText, col=lineCol, lty=1)
+legend(x="topright", legend=legendText, col=lineCol, lty=1, seg.len=1)
 
 # write the plot to a file
 png(filename = "plot3.png", width = 480, height = 480, units = "px")
+plot(myData2$Date, myData2$Sub_metering_1, ylab="Energy sub metering", xlab="", main="", type='n')
+points(myData2$Date, myData2$Sub_metering_1, type='l', col="black")
+points(myData2$Date, myData2$Sub_metering_2, type='l', col="red")
+points(myData2$Date, myData2$Sub_metering_3, type='l', col="blue")
+
+legendText <- c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
+lineCol <- c("black", "red", "blue")
+legend(x="topright", legend=legendText, col=lineCol, lty=1, seg.len=1)
 dev.off()
