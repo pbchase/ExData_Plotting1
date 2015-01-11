@@ -1,5 +1,5 @@
-# plot1.R
-# A script to generate the plot "Global Active Power" based on data from
+# plot2.R
+# A script to generate the plot "Global Active Power (Kilowatts)" based on data from
 # the UC Irvine Machine Learning Repository about household electricity consumption.
 
 # Download data file

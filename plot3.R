@@ -1,5 +1,5 @@
-# plot1.R
-# A script to generate the plot "Global Active Power" based on data from
+# plot3.R
+# A script to generate the plot "Energy Sub Metering" based on data from
 # the UC Irvine Machine Learning Repository about household electricity consumption.
 
 # Download data file
