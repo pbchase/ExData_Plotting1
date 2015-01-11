@@ -45,7 +45,7 @@ myData2$Global_reactive_power <- as.numeric(myData2$Global_reactive_power)
 # set the plot parameters we need for plot
 par(pch='.', lty=1)
 par(mfcol=c(2,2))
-par(mar = c(4,4,2,2))
+par(mar = c(5,4,2,2))
 
 # write plot for GAP
 plot(myData2$Date, myData2$gap, ylab="Global Active Power", xlab="", main="", type='l')
